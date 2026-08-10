@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run active MySQL file",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/d",
+        "/c",
+        "mysql -u root -p < \"${file}\""
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
