@@ -1,0 +1,17 @@
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+*.local
+
+# Database exports and temporary files
+*.dump
+*.sql.bak
+*.log
+tmp/
+
+# Editors and operating systems
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
